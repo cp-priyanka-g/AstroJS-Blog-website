@@ -1,0 +1,29 @@
+{
+  "name": "astrojs-blog-website",
+  "version": "1.0.0",
+  "description": "Implement Blog website using the astroJS",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cp-priyanka-g/AstroJS-Blog-website.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cp-priyanka-g/AstroJS-Blog-website/issues"
+  },
+  "homepage": "https://github.com/cp-priyanka-g/AstroJS-Blog-website#readme",
+  "dependencies": {
+    "@astrojs/vue": "^1.2.1",
+    "astro": "^1.6.1",
+    "vue": "^3.2.41"
+  }
+}
