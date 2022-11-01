@@ -5,7 +5,7 @@
   <div class="container z-[1] lg:flex-wrap space-x-20">
     <div class="flex flex-col flex-wrap lg:flex-row">
       <a
-        class="flex flex-col m-2.5 sm:m-5 flex-[1_1_0%] active:scale-[0.98]"
+        class="flex flex-col content-center hover:animate-jump-card -translate-y-6 m-2.5 sm:m-5 flex-[1_1_0%] active:scale-[0.98]"
         v-for="blog in blogs"
         :key="blog"
         target="_blank"
