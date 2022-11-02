@@ -1,11 +1,13 @@
 <template>
   <div>
-    <h1 class="text-pink-400 flex justify-center">CANOPAS BLOG POST</h1>
+    <h1 class="text-pink-400 flex justify-center text-7xl mb-10">
+      CANOPAS BLOG POST
+    </h1>
   </div>
-  <div class="container z-[1] lg:flex-wrap space-x-20">
+  <div class="container z-[1] lg:flex-wrap space-x-20 ml-auto mr-auto">
     <div class="flex flex-col flex-wrap lg:flex-row">
       <a
-        class="flex flex-col content-center hover:animate-jump-card -translate-y-6 m-2.5 sm:m-5 flex-[1_1_0%] active:scale-[0.98]"
+        class="flex flex-col basis-[30%] justify-center hover:animate-jump-card -translate-y-6 m-2.5 sm:m-5 flex-[1_1_0%] active:scale-[0.98]"
         v-for="blog in blogs"
         :key="blog"
         target="_blank"
@@ -17,9 +19,9 @@
         />
 
         <div
-          class="flex flex-col justify-between flex-1 px-2.5 py-5 sm:p-5 shadow-[0_4px_4px_rgba(0,0,0,0.5)] bg-black-900 rounded-b-lg bg-black"
+          class="flex flex-col basis-1/2 justify-between flex-1 px-2.5 py-5 sm:p-5 shadow-[0_4px_4px_rgba(0,0,0,0.5)] bg-black-900 rounded-b-lg bg-black"
         >
-          <div class="text-white">{{ blog.title }}</div>
+          <div class="text-white text-3xl">{{ blog.title }}</div>
           <div class="text-white mt-10">
             {{ blog.Description }}
           </div>
@@ -43,6 +45,8 @@
 </template>
 <script type="module">
 import flutter from "/assets/flutter.png";
+import flutter2 from "/assets/flutter2.png";
+import android from "/assets/android.png";
 import web from "/assets/web.jpeg";
 import lotus from "/assets/lotus.jpeg";
 import ios from "/assets/ios.jpeg";
@@ -52,6 +56,18 @@ export default {
       blogs: [
         {
           id: "blog-1",
+          image: flutter2,
+          name: "Jignesh Sanghani",
+          date: "08-2-2022",
+          title: "iOS - Infinite Marquee Animation with SwiftUI",
+          Description:
+            "Static is boring nowadays, especially in Mobile designs. Designers are looking for more and more creative ways to attract users’ attention.\
+At the same time, platforms are providing really good support for the easier implementation of crazy animations!\
+Last week, we also received one such requirement from our designer team. The app we were working on is Nolonely-Build healthy habits,\
+available on both android and iOS platforms..",
+        },
+        {
+          id: "blog-2",
           image: flutter,
           name: "Nidhi Devra",
           date: "20-04-2022",
@@ -64,7 +80,7 @@ export default {
         NavigationStack .",
         },
         {
-          id: "blog-2",
+          id: "blog-3",
           image: lotus,
           name: "Priyanka Gour",
           date: "10-04-2022",
@@ -72,11 +88,11 @@ export default {
           Description:
             "I'm going to share with you some of the most important ideas that have ever been discovered in the area to\
             be a Highly Creative person.Creativity enables individuals to generate new or innovative ideas.\
-             Having the Trait of a creative thinker often enables individuals to generate novel solutions to\
+             Having the Trait of a creative thinker underline-offset-8n enables individuals to generate novel solutions to\
              any problem. Creative peoples have various qualities.",
         },
         {
-          id: "blog-3",
+          id: "blog-4",
           image: web,
           name: "Sumita K",
           date: "20-10-2022",
@@ -88,7 +104,7 @@ export default {
         I would also advise you to later explore on your own as guidelines differ significantly based on project requirements and use cases..",
         },
         {
-          id: "blog-4",
+          id: "blog-5",
           image: ios,
           name: "Shruti Sonani",
           date: "25-2-2022",
@@ -97,6 +113,17 @@ export default {
             "1. Use SwiftUI-SwiftUI helps you build great-looking apps across all Apple platforms with the power of Swift - and as little\
             code as possible. With SwiftUI, you can bring even better experiences to all users, on any Apple device,\
              using just one set of tools and APIs.",
+        },
+        {
+          id: "blog-6",
+          image: android,
+          name: "Radhika S",
+          date: "11-2-2022",
+          title: "Jetpack compose: Cool Button Click Effects",
+          Description:
+            "Every component of the screen has its way of giving the user feedback when interacting with them. For example,\
+            when the user touches the Toggle button, it’ll change its state to respond to the interaction.\
+            This interaction gives a feel to the user.In this blog, we’ll implement a few custom click effects to make your button clicks attractive.",
         },
       ],
     };
