@@ -11,7 +11,11 @@
         v-for="blog in blogs"
         :key="blog"
         target="_blank"
-      >
+        ><div
+          class="bg-pink-400 w-[20%] z-[2] absolute top-5 right-5 text-center rounded-lg text-white"
+        >
+          {{ blog.category }}
+        </div>
         <img
           :src="blog.image"
           class="w-full h-full object-cover rounded-t-lg"
@@ -19,17 +23,17 @@
         />
 
         <div
-          class="flex flex-col basis-1/2 justify-between flex-1 px-2.5 py-5 sm:p-5 shadow-[0_4px_4px_rgba(0,0,0,0.5)] bg-black-900 rounded-b-lg bg-black"
+          class="flex flex-col basis-1/2 justify-between flex-1 px-2.5 py-5 sm:p-5 shadow-[0_4px_4px_rgba(0,0,0,0.5)] rounded-b-lg"
         >
-          <div class="text-white text-3xl">{{ blog.title }}</div>
-          <div class="text-white mt-10">
+          <div class="text-black text-3xl">{{ blog.title }}</div>
+          <div class="text-black mt-10">
             {{ blog.Description }}
           </div>
           <div class="w-full overflow-hidden mt-6">
-            <div class="float-left text-white">
+            <div class="float-left text-black">
               {{ blog.date }}
             </div>
-            <div class="float-right text-white">
+            <div class="float-right text-black">
               {{ blog.name }}
             </div>
           </div>
@@ -65,6 +69,7 @@ export default {
 At the same time, platforms are providing really good support for the easier implementation of crazy animations!\
 Last week, we also received one such requirement from our designer team. The app we were working on is Nolonely-Build healthy habits,\
 available on both android and iOS platforms..",
+          category: "Flutter",
         },
         {
           id: "blog-2",
@@ -78,6 +83,7 @@ available on both android and iOS platforms..",
         to integrate it into a few production projects, navigation was always a pain. We even developed a library UIPilot to make\
         navigation as easy as possible.2-3 years later, Apple finally realized that we need something new entirely, and there comes\
         NavigationStack .",
+          category: "Flutter",
         },
         {
           id: "blog-3",
@@ -90,6 +96,7 @@ available on both android and iOS platforms..",
             be a Highly Creative person.Creativity enables individuals to generate new or innovative ideas.\
              Having the Trait of a creative thinker underline-offset-8n enables individuals to generate novel solutions to\
              any problem. Creative peoples have various qualities.",
+          category: "Web",
         },
         {
           id: "blog-4",
@@ -102,6 +109,7 @@ available on both android and iOS platforms..",
         In this article, we'll have a quick look at a few most essential libraries and tips that\
         make your day-to-day development effective and easy.Note - Think of these as more of a guideline to start with.\
         I would also advise you to later explore on your own as guidelines differ significantly based on project requirements and use cases..",
+          category: "Web",
         },
         {
           id: "blog-5",
@@ -113,6 +121,7 @@ available on both android and iOS platforms..",
             "1. Use SwiftUI-SwiftUI helps you build great-looking apps across all Apple platforms with the power of Swift - and as little\
             code as possible. With SwiftUI, you can bring even better experiences to all users, on any Apple device,\
              using just one set of tools and APIs.",
+          category: "IOS",
         },
         {
           id: "blog-6",
@@ -122,8 +131,9 @@ available on both android and iOS platforms..",
           title: "Jetpack compose: Cool Button Click Effects",
           Description:
             "Every component of the screen has its way of giving the user feedback when interacting with them. For example,\
-            when the user touches the Toggle button, it’ll change its state to respond to the interaction.\
-            This interaction gives a feel to the user.In this blog, we’ll implement a few custom click effects to make your button clicks attractive.",
+            when the user touches the Toggle button, it'll change its state to respond to the interaction.\
+            This interaction gives a feel to the user.In this blog, we'll implement a few custom click effects to make your button clicks attractive.",
+          category: "Android",
         },
       ],
     };
