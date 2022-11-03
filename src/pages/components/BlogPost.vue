@@ -10,6 +10,7 @@
         class="flex flex-col basis-[30%] justify-center hover:animate-jump-card -translate-y-6 m-2.5 sm:m-5 flex-[1_1_0%] active:scale-[0.98]"
         v-for="blog in blogs"
         :key="blog"
+        :href="blog.href"
         target="_blank"
         ><div
           class="bg-pink-400 w-[20%] z-[2] absolute top-5 right-5 text-center rounded-lg text-white"
@@ -18,15 +19,15 @@
         </div>
         <img
           :src="blog.image"
-          class="w-full h-full object-cover rounded-t-lg"
+          class="w-full h-3/6 object-cover rounded-t-lg font-bold"
           :alt="blog.title"
         />
 
         <div
           class="flex flex-col basis-1/2 justify-between flex-1 px-2.5 py-5 sm:p-5 shadow-[0_4px_4px_rgba(0,0,0,0.5)] rounded-b-lg"
         >
-          <div class="text-black text-3xl">{{ blog.title }}</div>
-          <div class="text-black mt-10">
+          <div class="text-black text-xl">{{ blog.title }}</div>
+          <div class="text-black mt-10 text-sm">
             {{ blog.Description }}
           </div>
           <div class="w-full overflow-hidden mt-6">
@@ -54,6 +55,7 @@ import android from "/assets/android.png";
 import web from "/assets/web.jpeg";
 import lotus from "/assets/lotus.jpeg";
 import ios from "/assets/ios.jpeg";
+
 export default {
   data() {
     return {
@@ -70,6 +72,7 @@ At the same time, platforms are providing really good support for the easier imp
 Last week, we also received one such requirement from our designer team. The app we were working on is Nolonely-Build healthy habits,\
 available on both android and iOS platforms..",
           category: "Flutter",
+          href: "../components/PostDetail",
         },
         {
           id: "blog-2",
@@ -84,6 +87,7 @@ available on both android and iOS platforms..",
         navigation as easy as possible.2-3 years later, Apple finally realized that we need something new entirely, and there comes\
         NavigationStack .",
           category: "Flutter",
+          href: "../components/PostDetail",
         },
         {
           id: "blog-3",
@@ -97,6 +101,7 @@ available on both android and iOS platforms..",
              Having the Trait of a creative thinker underline-offset-8n enables individuals to generate novel solutions to\
              any problem. Creative peoples have various qualities.",
           category: "Web",
+          href: "../components/PostDetail",
         },
         {
           id: "blog-4",
@@ -110,6 +115,7 @@ available on both android and iOS platforms..",
         make your day-to-day development effective and easy.Note - Think of these as more of a guideline to start with.\
         I would also advise you to later explore on your own as guidelines differ significantly based on project requirements and use cases..",
           category: "Web",
+          href: "/pages/components/PostDetail",
         },
         {
           id: "blog-5",
@@ -122,6 +128,7 @@ available on both android and iOS platforms..",
             code as possible. With SwiftUI, you can bring even better experiences to all users, on any Apple device,\
              using just one set of tools and APIs.",
           category: "IOS",
+          href: "/pages/components/PostDetail",
         },
         {
           id: "blog-6",
@@ -134,6 +141,7 @@ available on both android and iOS platforms..",
             when the user touches the Toggle button, it'll change its state to respond to the interaction.\
             This interaction gives a feel to the user.In this blog, we'll implement a few custom click effects to make your button clicks attractive.",
           category: "Android",
+          href: "/pages/components/PostDetail.vue",
         },
       ],
     };
