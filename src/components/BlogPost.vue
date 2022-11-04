@@ -72,7 +72,7 @@ At the same time, platforms are providing really good support for the easier imp
 Last week, we also received one such requirement from our designer team. The app we were working on is Nolonely-Build healthy habits,\
 available on both android and iOS platforms..",
           category: "Flutter",
-          href: "../components/PostDetail",
+          href: "/postdetail",
         },
         {
           id: "blog-2",
@@ -87,7 +87,7 @@ available on both android and iOS platforms..",
         navigation as easy as possible.2-3 years later, Apple finally realized that we need something new entirely, and there comes\
         NavigationStack .",
           category: "Flutter",
-          href: "../components/PostDetail",
+          href: "/postdetail",
         },
         {
           id: "blog-3",
@@ -101,7 +101,7 @@ available on both android and iOS platforms..",
              Having the Trait of a creative thinker underline-offset-8n enables individuals to generate novel solutions to\
              any problem. Creative peoples have various qualities.",
           category: "Web",
-          href: "../components/PostDetail",
+          href: "/postdetail",
         },
         {
           id: "blog-4",
@@ -115,7 +115,7 @@ available on both android and iOS platforms..",
         make your day-to-day development effective and easy.Note - Think of these as more of a guideline to start with.\
         I would also advise you to later explore on your own as guidelines differ significantly based on project requirements and use cases..",
           category: "Web",
-          href: "/pages/components/PostDetail",
+          href: "/postdetail",
         },
         {
           id: "blog-5",
@@ -128,7 +128,7 @@ available on both android and iOS platforms..",
             code as possible. With SwiftUI, you can bring even better experiences to all users, on any Apple device,\
              using just one set of tools and APIs.",
           category: "IOS",
-          href: "/pages/components/PostDetail",
+          href: "/postdetail",
         },
         {
           id: "blog-6",
@@ -141,7 +141,7 @@ available on both android and iOS platforms..",
             when the user touches the Toggle button, it'll change its state to respond to the interaction.\
             This interaction gives a feel to the user.In this blog, we'll implement a few custom click effects to make your button clicks attractive.",
           category: "Android",
-          href: "/pages/components/PostDetail.vue",
+          href: "/postdetail",
         },
       ],
     };
